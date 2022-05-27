@@ -35,7 +35,7 @@
                 Grid.Row="1"
                 Grid.Column="0"/>
         <Button x:Name="negativeButton" 
-                Content="+/1"
+                Content="+/-"
                 Margin="5"
                 Grid.Row="1"
                 Grid.Column="1"/>
