@@ -133,6 +133,7 @@
                 Grid.Row="5"
                 Grid.ColumnSpan="2"/>
         <Button x:Name="dotButton" 
+                Click="PointButton_Click"
                 Content="."
                 Margin="5"
                 Grid.Row="5"
