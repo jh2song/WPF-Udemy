@@ -59,12 +59,19 @@ namespace Calculator
 			}
 		}
 
+		// I can't catch the percentage mechanism...
+		// 50 + 5% (2.5) = (52.5)
+		// 80 + 10% (8) = (88)
+
 		private void PercentButton_Click(object sender, RoutedEventArgs e)
 		{
-			if (double.TryParse(resultLabel.Content.ToString(), out lastNumber))
+			double tempNumber;
+			if (double.TryParse(resultLabel.Content.ToString(), out tempNumber))
 			{
-				lastNumber = lastNumber / 100;
-				resultLabel.Content = lastNumber.ToString();
+				tempNumber = (tempNumber / 100);
+				if (lastNumber != 0)
+					tempNumber *= lastNumber;
+				resultLabel.Content = tempNumber.ToString();
 			}
 		}
 
@@ -80,6 +87,8 @@ namespace Calculator
 		private void ACButton_Click(object sender, RoutedEventArgs e)
 		{
 			resultLabel.Content = "0";
+			result = 0;
+			lastNumber = 0;
 		}
 
 		private void OperationButton_Click(object sender, RoutedEventArgs e)
