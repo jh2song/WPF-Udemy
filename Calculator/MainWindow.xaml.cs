@@ -153,6 +153,12 @@ namespace Calculator
 
 		public static double Divide(double n1, double n2)
 		{
+			if (n2 == 0)
+			{
+				MessageBox.Show("0으로 나누는건 허용되지 않습니다.", "0으로 나눔", MessageBoxButton.OK, MessageBoxImage.Error);
+				return 0;
+			}
+
 			return n1 / n2;
 		}
 	}
