@@ -104,7 +104,7 @@ namespace Calculator
 				selectedOperator = SelectedOperator.Sustraction;
 			if (sender == multiplyButton)
 				selectedOperator = SelectedOperator.Multiplication;
-			if (sender == divideBUtton)
+			if (sender == divideButton)
 				selectedOperator = SelectedOperator.Division;
 		}
 
