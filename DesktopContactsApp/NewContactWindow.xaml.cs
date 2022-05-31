@@ -22,9 +22,10 @@ namespace DesktopContactsApp
 			InitializeComponent();
 		}
 
-		private void Button_Click(object sender, RoutedEventArgs e)
+		private void SaveButton_Click(object sender, RoutedEventArgs e)
 		{
-
+			// Save contact
+			Close();
 		}
 	}
 }
