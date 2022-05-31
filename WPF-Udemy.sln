@@ -7,7 +7,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Calculator", "Calculator\Ca
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Prac001", "Prac001\Prac001.csproj", "{9CA5B87A-BFCF-4EC7-9A27-42280FB6D339}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Prac002", "Prac002\Prac002.csproj", "{9A92D862-336B-4C6A-842C-A7039F013077}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Prac002", "Prac002\Prac002.csproj", "{9A92D862-336B-4C6A-842C-A7039F013077}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DesktopContactsApp", "DesktopContactsApp\DesktopContactsApp.csproj", "{D3370A78-F655-4D95-92CB-4DD2A1A578A6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,6 +29,10 @@ Global
 		{9A92D862-336B-4C6A-842C-A7039F013077}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9A92D862-336B-4C6A-842C-A7039F013077}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9A92D862-336B-4C6A-842C-A7039F013077}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D3370A78-F655-4D95-92CB-4DD2A1A578A6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D3370A78-F655-4D95-92CB-4DD2A1A578A6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D3370A78-F655-4D95-92CB-4DD2A1A578A6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D3370A78-F655-4D95-92CB-4DD2A1A578A6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
