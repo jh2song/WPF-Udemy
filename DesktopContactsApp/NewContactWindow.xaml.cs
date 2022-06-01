@@ -1,4 +1,6 @@
-﻿using System;
+﻿using DesktopContactsApp.Classes;
+using SQLite;
+using System;
 using System.Collections.Generic;
 using System.Text;
 using System.Windows;
@@ -24,7 +26,22 @@ namespace DesktopContactsApp
 
 		private void SaveButton_Click(object sender, RoutedEventArgs e)
 		{
-			// Save contact
+			// TODO: Save contact
+			Contact contact = new Contact()
+			{
+				Name = nameTextBox.Text,
+				Email = emailTextBox.Text,
+				Phone = phoneTextBox.Text
+			};
+			string databaseName = "Contacts.db";
+			// folderPath: 내 문서 찾기
+			string folderPath = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
+			string databasePath = System.IO.Path.Combine(folderPath, databaseName);
+
+			SQLiteConnection connection = new SQLiteConnection(databasePath);
+			connection.CreateTable<Contact>();
+			connection.Insert(contact);
+
 			Close();
 		}
 	}
