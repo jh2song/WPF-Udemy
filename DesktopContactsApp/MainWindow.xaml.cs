@@ -38,12 +38,17 @@ namespace DesktopContactsApp
 
 		void ReadDatabase()
 		{
+			List<Contact> contacts;
 			using (SQLite.SQLiteConnection conn = new SQLite.SQLiteConnection(App.databasePath))
 			{
 				conn.CreateTable<Contact>();
-				var contacts = conn.Table<Contact>().ToList();
+				contacts = conn.Table<Contact>().ToList();
 			}
 
+			if (contacts != null)
+			{
+				contactsListView.ItemsSource = contacts;
+			}
 		}
 	}
 }
