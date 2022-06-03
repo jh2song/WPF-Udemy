@@ -5,7 +5,7 @@ using System.Text;
 
 namespace DesktopContactsApp.Classes
 {
-	class Contact
+	public class Contact
 	{
 		[PrimaryKey, AutoIncrement]
 
