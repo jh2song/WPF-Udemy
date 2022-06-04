@@ -10,4 +10,4 @@
     <PackageReference Include="sqlite-net-pcl" Version="1.7.335" />
   </ItemGroup>
 
-</Project>UserControl1
+</Project>
